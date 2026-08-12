@@ -60,6 +60,14 @@ func TestMainWorkflowSchema_SafeOutputsTargetProperties(t *testing.T) {
 			},
 		},
 		{
+			name: "create-check-run with target",
+			safeOutputs: map[string]any{
+				"create-check-run": map[string]any{
+					"target": "triggering",
+				},
+			},
+		},
+		{
 			name: "update-issue with target and target-repo",
 			safeOutputs: map[string]any{
 				"update-issue": map[string]any{
