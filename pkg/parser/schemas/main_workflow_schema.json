@@ -8013,6 +8013,10 @@
                     }
                   ]
                 },
+                "target": {
+                  "type": "string",
+                  "description": "Target pull request for the check run: 'triggering' (default), '*' (any pull request), or an explicit pull request number"
+                },
                 "github-token": {
                   "$ref": "#/$defs/github_token_same_job",
                   "description": "GitHub token to use for this specific output type. Overrides global github-token if specified."
